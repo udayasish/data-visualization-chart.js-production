@@ -25,7 +25,7 @@ const GeographicalDistributionChart = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/api/visualizations/geographical-distribution')
+    axios.get('https://data-visualization-chart-js.onrender.com/api/visualizations/geographical-distribution')
       .then((response) => {
         const data = response.data;
 
