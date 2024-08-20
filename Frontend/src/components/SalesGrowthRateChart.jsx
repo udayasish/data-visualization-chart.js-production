@@ -30,7 +30,7 @@ const SalesGrowthRateChart = () => {
   });
 
   useEffect(() => {
-    axios.get('http://localhost:8000/api/visualizations/sales-growth-rate')
+    axios.get('https://data-visualization-chart-js.onrender.com/api/visualizations/sales-growth-rate')
       .then((response) => {
         const data = response.data;
 
