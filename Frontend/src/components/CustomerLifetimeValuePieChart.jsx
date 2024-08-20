@@ -1,5 +1,3 @@
-// src/components/CustomerLifetimeValuePieChart.js
-
 import React, { useEffect, useState } from 'react';
 import { Pie } from 'react-chartjs-2';
 import axios from 'axios';
@@ -35,7 +33,7 @@ const CustomerLifetimeValuePieChart = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/api/visualizations/customer-lifetime-value')
+    axios.get('https://data-visualization-chart-js.onrender.com/api/visualizations/customer-lifetime-value')
       .then((response) => {
         const data = response.data;
         
