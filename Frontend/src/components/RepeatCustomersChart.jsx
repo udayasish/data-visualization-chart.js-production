@@ -24,7 +24,7 @@ const RadarChart = () => {
   const fetchChartData = async (selectedInterval) => {
     try {
       const response = await axios.get(
-        `http://localhost:8000/api/visualizations/repeat-customers?interval=${selectedInterval}`
+        `https://data-visualization-chart-js.onrender.com/api/visualizations/repeat-customers?interval=${selectedInterval}`
       );
       const data = response.data;
 
